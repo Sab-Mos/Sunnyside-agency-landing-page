@@ -18,9 +18,7 @@ The Sunnyside Agency Landing Page is designed to showcase the creative services 
 
 ![sunny-img-tablet](https://github.com/Sab-Mos/Sunnyside-agency-landing-page/assets/131381168/7ae2382d-01ae-4ee2-ba4a-6d44b422efb0)
 
-
-
-
+![sunny-img-mobile](https://github.com/Sab-Mos/Sunnyside-agency-landing-page/assets/131381168/b5964e6d-65b7-48ac-8597-25784d3eff71)
 
 ### Responsiveness
 
