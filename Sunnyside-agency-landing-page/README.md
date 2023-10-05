@@ -1,5 +1,7 @@
 # Sunnyside Agency Landing Page
 
+![sunny-img-1](https://github.com/Sab-Mos/Sunnyside-agency-landing-page/assets/131381168/cf3f9482-e69e-4b40-9d2f-90d02c7aebd3)
+
 ### Demo
 
 [Live Demo](Replace with the actual live demo link)
@@ -9,6 +11,13 @@
 The Sunnyside Agency Landing Page is designed to showcase the creative services offered by Sunnyside Agency. It emphasizes a modern and visually appealing design to capture users' attention and deliver the brand's message effectively.
 
 ### Screenshots
+
+![sunny-img-2](https://github.com/Sab-Mos/Sunnyside-agency-landing-page/assets/131381168/c360b7da-c805-4dba-9a77-10e05ce2dc02)
+
+![sunny-img-3](https://github.com/Sab-Mos/Sunnyside-agency-landing-page/assets/131381168/7a2e1222-a5a6-499f-9557-03714bb2a65c)
+
+
+
 
 ### Responsiveness
 
