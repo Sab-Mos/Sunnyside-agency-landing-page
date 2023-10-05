@@ -3,7 +3,7 @@
 ![sunny-img-1](https://github.com/Sab-Mos/Sunnyside-agency-landing-page/assets/131381168/cf3f9482-e69e-4b40-9d2f-90d02c7aebd3)
 
 ### Demo
-[Live Demo](Replace with the actual live demo link)
+[Live Demo](https://651e8fc22d5b270444471aaf--hilarious-dolphin-4f7d71.netlify.app/)
 
 ## Overview
 
