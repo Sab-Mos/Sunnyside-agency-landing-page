@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+/* font-family: 'Fraunces', serif; */
+/* font-family: 'Barlow', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.container {
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.top-section {
+  padding: 3rem;
+  width: 100%;
+  background-image: url("images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  min-height: 700px;
+  background-position: center 0px;
+  background-size: cover;
+}
+
+.top-section .icon-bars {
+  position: absolute;
+  cursor: pointer;
+  right: 50px;
+  display: none;
+}
+
+.top-section .main-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav .logo-box img {
+  min-width: 170px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.main-nav ul li:not(li:last-child) {
+  margin-right: 3rem;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav ul li a:hover:not(.main-nav ul li:last-child a) {
+  opacity: 0.65;
+  transition: 0.3s ease;
+}
+
+.main-nav ul li:last-child a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1rem 1.5rem;
+  font-family: "Fraunces", serif;
+}
+
+.main-nav ul li:last-child a:hover {
+  background-color: #76d4fe;
+  color: white;
+  transition: 0.4s ease;
+}
+
+.top-section > div {
+  min-height: 300px;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.top-section > div h1 {
+  font-size: 3rem;
+  letter-spacing: 10px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: white;
+}
+
+.top-section > div img {
+  margin-top: 6.5rem;
+  height: 100px;
+}
+
+.showcase {
+  width: 100%;
+}
+
+.showcase .showcase-box {
+  display: flex;
+}
+
+.showcase-box .showcase-text {
+  width: 50%;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7rem;
+}
+
+.showcase-text h2 {
+  padding-right: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: #232e3d;
+}
+
+.showcase-text p {
+  line-height: 25px;
+  color: #898993;
+  margin-bottom: 3rem;
+}
+
+.showcase-text a {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  margin-left: 0.5rem;
+  color: #1f2d3c;
+  text-decoration: none;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  z-index: 10;
+}
+
+.showcase-text a::after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  top: 14px;
+  border-radius: 20px;
+  left: 1px;
+  z-index: -1;
+  width: 115px;
+  opacity: 0.5;
+}
+
+.showcase-text:first-child a::after {
+  background-color: #ffd302;
+  opacity: 0.4;
+}
+
+.showcase-text:last-child a::after {
+  background-color: #fe6f61;
+  opacity: 0.4;
+}
+
+.showcase-text:first-child a:hover::after,
+.showcase-text:last-child a:hover:after {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.showcase-box .showcase-img {
+  width: 50%;
+}
+
+.showcase-box .showcase-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.showcase-box .showcase-img img:last-child {
+  display: none;
+}
+
+.showcase-box:last-child > div {
+  width: 50%;
+  background-size: cover;
+}
+
+.showcase-box:last-child > div:first-child {
+  background-image: url("images/desktop/image-graphic-design.jpg");
+}
+
+.showcase-box:last-child > div:last-child {
+  background-image: url("images/desktop/image-photography.jpg");
+}
+
+.showcase-box:last-child .showcase-inner-box {
+  text-align: center;
+  padding: 23rem 10rem 2rem;
+}
+
+.showcase-inner-box h2 {
+  font-family: "Fraunces", serif;
+  margin-bottom: 1.7rem;
+  font-weight: 900;
+  opacity: 0.6;
+}
+
+.showcase-inner-box p {
+  opacity: 0.5;
+  line-height: 25px;
+}
+
+.testimonial-section {
+  margin-top: 8rem;
+}
+
+.testimonial-section > h2 {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  color: #aeaeae;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+.testimonial-section .testimonial-wrapper-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonial-wrapper-box .testimonial-box {
+  display: flex;
+  padding: 3rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-box img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.testimonial-box > p {
+  color: #757679;
+  line-height: 27px;
+  margin-bottom: 4rem;
+}
+
+.testimonial-box .inner-testimonial-box {
+  text-align: center;
+}
+
+.inner-testimonial-box h3 {
+  color: #242b35;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+.inner-testimonial-box p {
+  opacity: 0.35;
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+}
+
+.gallery-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-top: 4rem;
+}
+
+.gallery-section div img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #90d4c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-container {
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.footer-logo-box {
+  position: relative;
+}
+
+.footer-logo-box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container .footer-link-box {
+  display: flex;
+  list-style-type: none;
+  gap: 55px;
+  margin-top: 2rem;
+}
+
+.footer-link-box a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #2d7464;
+  opacity: 0.7;
+}
+
+.footer-link-box a:hover {
+  color: white;
+  transition: 0.3s ease;
+}
+
+.footer-social-box {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.footer-social-box a {
+  cursor: pointer;
+}
+
+.footer-social-box a i {
+  color: #2c7566;
+  font-size: 1.4rem;
+}
+
+.footer-social-box a:hover i {
+  color: #f5ffff;
+  transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 991px) {
+  .top-section > div img {
+    margin-top: 3rem;
+    height: 150px;
+  }
+
+  .showcase-box .showcase-text {
+    text-align: center;
+    align-items: center;
+    padding: 1rem 3rem;
+  }
+
+  .showcase-text h2 {
+    padding-right: 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .showcase-box .showcase-img img {
+    width: 100%;
+  }
+
+  .showcase-box:last-child > div {
+    width: 50%;
+    min-height: 400px;
+  }
+
+  .showcase-box:last-child .showcase-inner-box {
+    margin-top: 13rem;
+    padding: 0rem 4rem 0rem;
+  }
+
+  .testimonial-section {
+    margin-top: 5rem;
+  }
+
+  .testimonial-section .testimonial-wrapper-box {
+    column-gap: 0.3rem;
+  }
+
+  .testimonial-wrapper-box .testimonial-box {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-section {
+    background-image: url("images/mobile/image-header.jpg");
+    padding: 2rem 2rem 0rem;
+    background-size: ;
+  }
+
+  .top-section .icon-bars {
+    display: block;
+    top: 37px;
+    right: 17px;
+  }
+
+  .top-section .icon-bars.active {
+    opacity: 0.4;
+  }
+
+  .top-section .main-nav.active {
+    flex-direction: column;
+  }
+
+  .main-nav.active .logo-box {
+    align-self: flex-start;
+  }
+
+  .main-nav ul {
+    display: none;
+  }
+
+  .main-nav ul.active {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: center;
+    position: absolute;
+    top: 7rem;
+    padding: 2.5rem 0rem 3rem;
+  }
+
+  .main-nav ul.active::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid rgb(255, 255, 255);
+    transform: rotate(180deg);
+  }
+
+  .main-nav ul.active li:not(li:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .main-nav ul.active li a:not(.main-nav ul li:last-child a) {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+  }
+
+  .main-nav ul li:last-child a {
+    background-color: #fed302;
+  }
+
+  .main-nav ul li:last-child a:hover {
+    background-color: #fbe15d;
+  }
+
+  .top-section > div h1 {
+    letter-spacing: 2px;
+    font-size: 3rem;
+  }
+
+  .top-section > div img {
+    margin-top: 5rem;
+  }
+
+  .showcase {
+    width: 100%;
+  }
+
+  .showcase .showcase-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .showcase-box:first-child {
+    flex-direction: column-reverse;
+  }
+
+  .showcase-box .showcase-text {
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .showcase-text h2 {
+    padding: 0rem 3rem;
+  }
+
+  .showcase-text p {
+    padding: 0rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .showcase-text a {
+    font-size: small;
+  }
+
+  .showcase-text a::after {
+    height: 8px;
+    top: 10px;
+  }
+
+  .showcase-box .showcase-img {
+    width: 100%;
+  }
+
+  .showcase-box .showcase-img img:first-child {
+    display: none;
+  }
+
+  .showcase-box .showcase-img img:last-child {
+    display: block;
+  }
+
+  .showcase-box:last-child > div {
+    width: 100%;
+  }
+
+  .showcase-box:last-child > div:first-child,
+  .showcase-box:last-child > div:last-child {
+    padding-bottom: 3.7rem;
+  }
+
+  .showcase-box:last-child > div:first-child {
+    background-image: url("images/mobile/image-graphic-design.jpg");
+  }
+
+  .showcase-box:last-child > div:last-child {
+    background-image: url("images/mobile/image-photography.jpg");
+  }
+
+  .showcase-box:last-child .showcase-inner-box {
+    text-align: center;
+    padding: 13rem 1.5rem 0rem;
+  }
+
+  .showcase-inner-box h2 {
+    font-size: 1.7rem;
+  }
+
+  .testimonial-section {
+    margin-top: 5rem;
+  }
+
+  .testimonial-section .testimonial-wrapper-box {
+    margin-top: 2rem;
+  }
+
+  .testimonial-box:not(.testimonial-box:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  .testimonial-box img {
+    margin-bottom: 1.7rem;
+  }
+
+  .testimonial-box > p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+}
